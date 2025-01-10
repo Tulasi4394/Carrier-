@@ -1,0 +1,22 @@
+<h1>
+  def describe_city():
+    city = input("Enter the name of your city: ").strip()
+    
+    # Example descriptions for some cities
+    city_descriptions = {
+        "new york": "New York City is known as the 'City That Never Sleeps,' famous for its skyline, Broadway shows, and cultural diversity.",
+        "paris": "Paris, the 'City of Light,' is renowned for its art, fashion, gastronomy, and iconic landmarks like the Eiffel Tower.",
+        "tokyo": "Tokyo is a bustling metropolis blending traditional temples with cutting-edge technology and vibrant city life.",
+        "sydney": "Sydney is famous for its stunning harbor, the Sydney Opera House, and its beautiful beaches like Bondi Beach.",
+        "cape town": "Cape Town is known for its breathtaking landscapes, including Table Mountain, and its rich cultural history."
+    }
+    
+    # Look for a predefined description or provide a generic response
+    description = city_descriptions.get(city.lower(), 
+        f"{city} sounds like a wonderful place! Every city has its unique charm and history.")
+    
+    print(description)
+
+# Run the function
+describe_city()
+</h1>
